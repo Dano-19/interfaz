@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-deber2',  // Aunque esto no es un error, en Angular es común utilizar 'camelCase' para nombres de componentes
+  selector: 'app-deber2',  
   standalone: true,
   imports: [],
   templateUrl: './Deber2.component.html',
-  styleUrls: ['./Deber2.component.scss']  // Debe ser 'styleUrls' (en plural)
+  styleUrls: ['./Deber2.component.scss'] 
 })
 export class Deber2Component {
 }

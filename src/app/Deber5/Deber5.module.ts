@@ -2,20 +2,20 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Deber5Component } from './Deber5.component';
-import { CarouselModule } from 'primeng/carousel';  // Importar PrimeNG Carousel
-import { TagModule } from 'primeng/tag';              // Importar PrimeNG Tag
-import { ButtonModule } from 'primeng/button';        // Importar PrimeNG Button
+import { CarouselModule } from 'primeng/carousel';  
+import { TagModule } from 'primeng/tag';              
+import { ButtonModule } from 'primeng/button';        
 import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [Deber5Component],  // Declaras tu componente aquí
   imports: [
     CommonModule,
-    CarouselModule,  // Importas los módulos de PrimeNG que vas a utilizar
+    CarouselModule, 
     TagModule,
     ButtonModule,
     RouterModule.forChild([
-      { path: '', component: Deber5Component }  // Aquí defines las rutas específicas si es un módulo perezoso
+      { path: '', component: Deber5Component }  
     ])
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
