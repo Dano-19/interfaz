@@ -9,17 +9,17 @@ import { CommonModule } from '@angular/common';
   selector: 'app-CASA',
   standalone: true,
   imports: [RouterModule, CommonModule], 
-  templateUrl: './CASA.component.html',
-  styleUrls: ['./CASA.component.scss'],
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
 })
-export class CASAComponent {
+export class HomeComponent {
   showButtons: boolean = true; 
 
   constructor(private router: Router) {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event: any) => {
-        this.showButtons = event.url === '/CASA';
+        this.showButtons = event.url === '/Home';
       });
   }
 }

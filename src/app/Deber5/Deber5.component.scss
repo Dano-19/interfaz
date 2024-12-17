@@ -1,7 +1,16 @@
+
+.Titulo {
+  text-align: center;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center; 
+  display: flex;
+  color: #ffa631;
+}
+
 .product-item {
   position: relative;
   padding: 16px;
-  background-color: rgb(255, 255, 255);
   border-radius: 12px;
   box-shadow: 0 6px 15px rgb(91, 223, 216);
   transition: all 0.3s ease;
@@ -31,11 +40,11 @@
   }
 
   .product-detail {
+    background-color: #fff7e6;
     text-align: center;
     margin-top: 20px;
     width: 100%; 
-
-    
+    margin-bottom: 20px;
 
     p {
       font-size: 1rem; 
@@ -47,7 +56,6 @@
       margin-bottom: 1rem;
     }
 
-    /* Contenedor de botones alineado a la derecha */
     .button-container {
       display: flex;
       justify-content: flex-end; 
@@ -59,23 +67,18 @@
         font-size: 1rem;
         color: #fff;
         border-radius: 25px;
-        background-color: #42e172; /* Azul */
         transition: background-color 0.2s ease;
 
         &.p-button-outlined {
           background-color: transparent;
-          border: 2px solid #42e15c;
-          color: #42e15c;
+          
         }
 
         &.p-button-rounded {
           border-radius: 25px;
         }
 
-        &:hover {
-          background-color: #42e15c; /* Azul más oscuro al pasar el ratón */
-          border-color: #42e15c;
-        }
+        
       }
 
       .ml-2 {
@@ -83,19 +86,19 @@
       }
     }
 
-    /* Contenedor para 'In Stock' y 'Out of Stock' */
+    
     .stock-status {
       display: flex;
-      justify-content: flex-end; /* Alinea el texto a la derecha */
+      justify-content: flex-end; 
       margin-top: 10px;
       font-weight: bold;
-      color: #4a5568; /* Gray color */
+      color: #4a5568; 
       font-size: 1rem;
     }
   }
 }
 
-/* Carrusel responsivo */
+
 .p-carousel {
   display: flex;
   flex-wrap: wrap;
@@ -103,59 +106,16 @@
   position: relative;
 
   .p-carousel-item {
-    width: 33.33%; /* 3 productos visibles en pantallas grandes */
+    width: 33.33%;
     padding: 10px;
     box-sizing: border-box;
-    transition: transform 0.5s ease; /* Hacemos que el carrusel se desplace suavemente hacia abajo */
+    transition: transform 0.5s ease; 
 
-    /* Ajuste para el movimiento vertical */
+    
     &:not(:first-child) {
-      transform: translateY(50px); /* Desplazamiento hacia abajo cuando no es el primer elemento */
+      transform: translateY(50px);
     }
   }
 
 
-}
-
-/* Estilo para los botones de navegación del carrusel */
-.p-carousel .p-carousel-prev,
-.p-carousel .p-carousel-next {
-  color: #000000;
-  font-size: 1.5rem;
-  background-color: transparent;
-  border: none;
-  transition: background-color 0.2s ease;
-
-  &:hover {
-    background-color: rgba(66, 153, 225, 0.1);
-  }
-}
-
-/* Estilo para los indicadores de navegación (líneas de navegación) */
-.p-carousel-indicators {
-  position: initial;
-  bottom: -15px; 
-  width: 50%;
-  display: flex;
-  justify-content: end;
-  padding: 0;
-  margin: 0;
-}
-
-.p-carousel-indicator {
-  width: 12px;
-  height: 30px;
-  margin: 10px 4px;
-  border-radius: 50%;
-  background-color: #cbd5e0; /* Color de los puntos (gris claro) */
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #42e15c; /* Color azul al pasar el ratón */
-  }
-
-  &.p-highlight {
-    background-color: #42e15c; /* Color azul cuando está activo (página actual) */
-  }
 }

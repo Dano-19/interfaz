@@ -5,6 +5,14 @@ body {
     
 }
 
+.Titulo {
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+    color: #ffa631;
+  }
 
 .container, .container-between, .container-wrap, .container-end {
     display: flex;
